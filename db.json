@@ -1,16 +1,60 @@
 {
-  "dates": [
+  "offices": [
     {
       "id": "1",
-      "date": "2024-03-19"
+      "name": "Downtown Dental Care",
+      "address": "123 Main St, Anytown, AN"
     },
     {
       "id": "2",
-      "date": "2024-03-22"
+      "name": "Suburban Smile Services",
+      "address": "456 Suburb Ave, Anytown, AN"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "officeId": "1",
+      "date": "2024-04-15",
+      "time": "10:00",
+      "patientName": "John Doe",
+      "status": "booked"
     },
     {
-      "id": "3",
-      "date": "2024-03-25"
+      "id": "2",
+      "officeId": "2",
+      "date": "2024-04-16",
+      "time": "14:00",
+      "patientName": "Jane Smith",
+      "status": "available"
+    }
+  ],
+  "availableDates": [
+    {
+      "officeId": "1",
+      "dates": ["2024-04-15", "2024-04-17", "2024-04-20"]
+    },
+    {
+      "officeId": "2",
+      "dates": ["2024-04-16", "2024-04-18", "2024-04-21"]
+    }
+  ],
+  "availableTimes": [
+    {
+      "date": "2024-04-15",
+      "times": ["10:00", "11:00", "14:00"]
+    },
+    {
+      "date": "2024-04-16",
+      "times": ["09:00", "13:00", "15:00"]
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": "abc123",
+      "selectedOfficeId": "1",
+      "selectedDate": "2024-04-15",
+      "selectedTime": "10:00"
     }
   ]
 }
